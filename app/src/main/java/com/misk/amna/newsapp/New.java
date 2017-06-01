@@ -6,22 +6,14 @@ package com.misk.amna.newsapp;
 
 public class New {
 
-    String Author;
     String Title;
     String Url;
-    String PublishedAt;
-    String Description;
+    String Section;
 
-    public New(String author, String title, String url, String description) {
-        Author = author;
+    public New(String title, String section, String url) {
         Title = title;
         Url = url;
-       // PublishedAt = publishedAt;
-        Description = description;
-    }
-
-    public String getAuthor() {
-        return Author;
+        Section = section;
     }
 
     public String getTitle() {
@@ -32,22 +24,8 @@ public class New {
         return Url;
     }
 
-    public String getPublishedAt() {
-        return PublishedAt;
+    public String getSection() {
+        return Section;
     }
 
-    public String getDescription() {
-        return Description;
-    }
-
-    @Override
-    public String toString() {
-        return "New{" +
-                "Author='" + Author + '\'' +
-                ", Title='" + Title + '\'' +
-                ", Url='" + Url + '\'' +
-                ", PublishedAt='" + PublishedAt + '\'' +
-                ", Description='" + Description + '\'' +
-                '}';
-    }
 }

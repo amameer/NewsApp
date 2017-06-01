@@ -32,15 +32,10 @@ public class NewAdapter extends ArrayAdapter<New> {
         }
 
         New CurrentNew = getItem(position);
-
-        TextView NewTitle = (TextView) listItemView.findViewById(R.id.title);
+        TextView NewTitle = (TextView) listItemView.findViewById(R.id.story_title);
         NewTitle.setText(CurrentNew.getTitle());
-
-        TextView NewAutor = (TextView) listItemView.findViewById(R.id.author);
-        NewAutor.setText(CurrentNew.getAuthor());
-
-        TextView Description = (TextView) listItemView.findViewById(R.id.description);
-        Description.setText(CurrentNew.getDescription());
+        TextView Section = (TextView) listItemView.findViewById(R.id.section_name);
+        Section.setText(CurrentNew.getSection());
         return listItemView;
     }
 
